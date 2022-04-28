@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon.ico" />
+    <None Remove="photochela.jpg" />
+    <None Remove="Pi\62gPOdheA9MyEX_lyRwUqxRILwaK_K76-QbU3Y8lW-Ofu43afSTCA2ZRfDgTHVySZ-3gAPxBv4xU5j-9H8djX4x_.jpg" />
+    <None Remove="Pi\analkabana.jpg" />
+    <None Remove="Pi\Fingers.jpg" />
+    <None Remove="Pi\Fingers2.jpg" />
+    <None Remove="Pi\photochela.jpg" />
+    <None Remove="Pi\Photos.jpg" />
+    <None Remove="Pi\Resorce.jpg" />
+    <None Remove="Pi\Resource2.jpg" />
+    <None Remove="Pi\test.jpg" />
+    <None Remove="test.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon.ico" />
+    <Resource Include="Pi\analkabana.jpg" />
+    <Resource Include="Pi\Fingers.jpg" />
+    <Resource Include="Pi\Fingers2.jpg" />
+    <Resource Include="Pi\photochela.jpg" />
+    <Resource Include="Pi\Photos.jpg" />
+    <Resource Include="Pi\Resorce.jpg" />
+    <Resource Include="Pi\Resource2.jpg" />
+    <Resource Include="Pi\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
